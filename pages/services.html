@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - WebSSET Outsourcing</title>
+    <meta name="description"
+        content="Explore our comprehensive outsourcing solutions: Inbound Customer Support, Outbound Sales, and Back Office Administration.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        accent: '#0369A1',
+                        secondary: '#334155',
+                        background: '#F8FAFC',
+                        surface: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft-md': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+                        'soft-xl': '0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02)',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="font-sans text-secondary bg-background antialiased flex flex-col min-h-screen">
+
+    <!-- Navbar Container -->
+    <header id="navbar" class="fixed bg-white w-full top-0 z-[100] transition-all duration-300">
+        <div class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-2 group">
+                <img src="../img/logo.png" alt="WebSSET Logo"
+                    class="w-10 h-10 object-contain group-hover:scale-105 transition-transform duration-300">
+                <span class="font-heading font-bold text-2xl text-primary tracking-tight">WebSSET</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium">
+                <a href="../index.html" class="text-primary hover:text-accent transition-colors">Home</a>
+                <a href="services.html" class="text-accent hover:text-accent/80 transition-colors">Services</a>
+                <a href="why-us.html" class="text-primary hover:text-accent transition-colors">Why Us</a>
+                <a href="faq.html" class="text-primary hover:text-accent transition-colors">FAQ</a>
+                <a href="#contact"
+                    class="px-5 py-2.5 bg-accent text-white rounded-lg font-semibold shadow-soft-md hover:shadow-soft-lg hover:bg-accent/90 transition-all duration-300 transform hover:-translate-y-0.5">Contact
+                    Sales</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-primary hover:text-accent p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-soft-xl border-t border-gray-100 p-4 flex flex-col gap-4">
+            <a href="../index.html" class="text-primary font-medium py-2 hover:text-accent">Home</a>
+            <a href="services.html" class="text-accent font-medium py-2">Services</a>
+            <a href="why-us.html" class="text-primary font-medium py-2 hover:text-accent">Why Us</a>
+            <a href="faq.html" class="text-primary font-medium py-2 hover:text-accent">FAQ</a>
+            <a href="#contact"
+                class="w-full text-center px-5 py-3 bg-accent text-white rounded-lg font-semibold">Contact Sales</a>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-24">
+        <!-- Hero -->
+        <section class="py-16 md:py-24 bg-white text-center">
+            <div class="container mx-auto px-4">
+                <div
+                    class="inline-block px-3 py-1 bg-blue-50 text-accent font-semibold text-sm rounded-full mb-6 animate-fade-in-up">
+                    What We Do</div>
+                <h1 class="font-heading font-bold text-4xl md:text-5xl text-primary mb-6 animate-fade-in-up delay-100">
+                    Expert Solutions for a <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-accent">Connected
+                        World</span>
+                </h1>
+                <p class="text-xl text-secondary max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
+                    Scalable, secure, and seamless outsourcing services tailored to your enterprise needs.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-20 bg-background">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+                    <div class="order-2 md:order-1 relative">
+                        <div class="absolute inset-0 bg-accent/5 rounded-3xl transform rotate-3"></div>
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-soft-lg relative z-10 border border-slate-100 h-80 flex items-center justify-center">
+                            <div class="text-center">
+                                <div
+                                    class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center text-accent mx-auto mb-4">
+                                    <i data-lucide="headset" class="w-10 h-10"></i>
+                                </div>
+                                <p class="text-slate-400 font-medium">Inbound Operations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h2 class="font-heading font-bold text-3xl text-primary mb-6">Inbound Customer Support</h2>
+                        <p class="text-lg text-secondary mb-8 leading-relaxed">
+                            Turn support into a competitive advantage. Our agents are trained to resolve issues on the
+                            first contact, boosting CSAT and brand loyalty.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mt-1 flex-shrink-0"></i>
+                                <span class="text-secondary"><strong>Omnichannel Support:</strong> Voice, Email, Chat,
+                                    and Social Media.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mt-1 flex-shrink-0"></i>
+                                <span class="text-secondary"><strong>Technical Helpdesk:</strong> Tier 1 & 2
+                                    troubleshooting for complex products.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mt-1 flex-shrink-0"></i>
+                                <span class="text-secondary"><strong>Concierge Services:</strong> High-touch VIP
+                                    support.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+                    <div>
+                        <h2 class="font-heading font-bold text-3xl text-primary mb-6">Outbound Sales & Acquisition</h2>
+                        <p class="text-lg text-secondary mb-8 leading-relaxed">
+                            Drive revenue with targeted outbound campaigns. Our teams focus on qualified lead generation
+                            and high-conversion appointment setting.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mt-1 flex-shrink-0"></i>
+                                <span class="text-secondary"><strong>Lead Generation:</strong> Identifying and nurturing
+                                    high-value prospects.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mt-1 flex-shrink-0"></i>
+                                <span class="text-secondary"><strong>Market Research:</strong> Surveys and data
+                                    collection.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mt-1 flex-shrink-0"></i>
+                                <span class="text-secondary"><strong>Customer Retention:</strong> Win-back campaigns for
+                                    churned users.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-teal-50 rounded-3xl transform -rotate-3"></div>
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-soft-lg relative z-10 border border-slate-100 h-80 flex items-center justify-center">
+                            <div class="text-center">
+                                <div
+                                    class="w-20 h-20 bg-teal-50 rounded-full flex items-center justify-center text-teal-600 mx-auto mb-4">
+                                    <i data-lucide="target" class="w-10 h-10"></i>
+                                </div>
+                                <p class="text-slate-400 font-medium">Outbound Growth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-background">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+                    <div class="order-2 md:order-1 relative">
+                        <div class="absolute inset-0 bg-slate-100 rounded-3xl transform rotate-3"></div>
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-soft-lg relative z-10 border border-slate-100 h-80 flex items-center justify-center">
+                            <div class="text-center">
+                                <div
+                                    class="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center text-slate-600 mx-auto mb-4">
+                                    <i data-lucide="database" class="w-10 h-10"></i>
+                                </div>
+                                <p class="text-slate-400 font-medium">Data Operations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h2 class="font-heading font-bold text-3xl text-primary mb-6">Back Office Administration</h2>
+                        <p class="text-lg text-secondary mb-8 leading-relaxed">
+                            Optimize your workflow by outsourcing time-consuming administrative tasks. We handle the
+                            details so you can focus on strategy.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mt-1 flex-shrink-0"></i>
+                                <span class="text-secondary"><strong>Data Entry & Mgmt:</strong> Accurate processing of
+                                    large datasets.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mt-1 flex-shrink-0"></i>
+                                <span class="text-secondary"><strong>Content Moderation:</strong> Protecting your brand
+                                    on social platforms.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mt-1 flex-shrink-0"></i>
+                                <span class="text-secondary"><strong>Claims Processing:</strong> Efficient handling for
+                                    insurance/finance.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-primary text-white">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Our Onboarding Process</h2>
+                    <p class="text-slate-300">Seamless transition from contract to go-live in 4 weeks or less.</p>
+                </div>
+
+                <div class="relative">
+                    <div class="hidden md:block absolute top-12 left-0 w-full h-1 bg-white/10"></div>
+
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <div class="relative text-center group">
+                            <div
+                                class="w-24 h-24 bg-slate-800 rounded-full flex items-center justify-center text-accent ring-8 ring-primary mx-auto mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="search" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">1. Discovery</h3>
+                            <p class="text-slate-400 text-sm">We analyze your current workflows and define KPIs.</p>
+                        </div>
+
+                        <div class="relative text-center group">
+                            <div
+                                class="w-24 h-24 bg-slate-800 rounded-full flex items-center justify-center text-accent ring-8 ring-primary mx-auto mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="settings" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">2. Setup</h3>
+                            <p class="text-slate-400 text-sm">Integration with your CRM and telephony systems.</p>
+                        </div>
+
+                        <div class="relative text-center group">
+                            <div
+                                class="w-24 h-24 bg-slate-800 rounded-full flex items-center justify-center text-accent ring-8 ring-primary mx-auto mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="users" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">3. Training</h3>
+                            <p class="text-slate-400 text-sm">Rigorous training on your brand, voice, and product.</p>
+                        </div>
+
+                        <div class="relative text-center group">
+                            <div
+                                class="w-24 h-24 bg-slate-800 rounded-full flex items-center justify-center text-accent ring-8 ring-primary mx-auto mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="rocket" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">4. Go Live</h3>
+                            <p class="text-slate-400 text-sm">Launch with live monitoring and real-time adjustments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-primary relative overflow-hidden">
+
+
+            <div class="container mx-auto px-4 md:px-6 relative z-10">
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div class="text-white">
+                        <h2 class="font-heading font-bold text-3xl md:text-4xl mb-6">Ready to Scale Your Support?</h2>
+                        <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+                            Get a custom proposal tailored to your business needs. Our team is ready to help you
+                            optimize your customer experience.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 bg-white/10 rounded-lg backdrop-blur-sm">
+                                    <i data-lucide="mail-open" class="w-6 h-6 text-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Email Us</h4>
+                                    <p class="text-slate-400">sales@verione.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 bg-white/10 rounded-lg backdrop-blur-sm">
+                                    <i data-lucide="phone" class="w-6 h-6 text-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Call Us</h4>
+                                    <p class="text-slate-400">+1 (800) 555-0123</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-2xl">
+                        <form id="lead-form"
+                            onsubmit="event.preventDefault(); document.getElementById('success-msg').classList.remove('hidden'); this.reset();">
+                            <h3 class="font-heading font-bold text-2xl text-primary mb-6">Request a Quote</h3>
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div class="space-y-1">
+                                    <label class="text-sm font-semibold text-secondary">First Name</label>
+                                    <input type="text"
+                                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all"
+                                        placeholder="John" required>
+                                </div>
+                                <div class="space-y-1">
+                                    <label class="text-sm font-semibold text-secondary">Last Name</label>
+                                    <input type="text"
+                                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all"
+                                        placeholder="Doe" required>
+                                </div>
+                            </div>
+                            <div class="space-y-1 mb-4">
+                                <label class="text-sm font-semibold text-secondary">Work Email</label>
+                                <input type="email"
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all"
+                                    placeholder="name@company.com" required>
+                            </div>
+                            <div class="space-y-1 mb-6">
+                                <label class="text-sm font-semibold text-secondary">Phone Number</label>
+                                <input type="tel"
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all"
+                                    placeholder="+1 (555) 000-0000" required>
+                            </div>
+                            <button type="submit"
+                                class="w-full py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:bg-accent/90 transition-all transform active:scale-95">
+                                Submit Request
+                            </button>
+                            <div id="success-msg"
+                                class="hidden mt-4 p-3 bg-green-50 text-green-700 text-sm font-medium rounded-lg text-center flex items-center justify-center gap-2">
+                                <i data-lucide="check-circle" class="w-4 h-4"></i> Message sent successfully!
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <a href="../index.html" class="flex items-center gap-2 mb-6">
+                        <img src="../img/logo.png" alt="WebSSET Logo" class="w-8 h-8 object-contain">
+                        <span class="font-heading font-bold text-xl tracking-tight">WebSSET</span>
+                    </a>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Trusted outsourcing solutions for enterprise scalability. Secure, compliant, and always
+                        available.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-semibold text-lg mb-6">Company</h4>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li><a href="why-us.html" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Our Services</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-semibold text-lg mb-6">Support</h4>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li><a href="faq.html" class="hover:text-accent transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-semibold text-lg mb-6">Contact</h4>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-accent"></i>
+                            contact@verione.com</li>
+                        <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-accent"></i> +1
+                            (800) 555-0123</li>
+                        <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-accent"></i>
+                            New York, NY</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-slate-400 text-xs">
+                <p>&copy; 2026 WebSSET Inc. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="linkedin"
+                            class="w-5 h-5"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="twitter"
+                            class="w-5 h-5"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="facebook"
+                            class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-sm');
+            } else {
+                navbar.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body>
+
+</html>
